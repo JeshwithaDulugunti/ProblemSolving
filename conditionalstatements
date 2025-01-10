@@ -1,0 +1,109 @@
+ implemented conditional statements related programs in vscode
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Solving using js</title>
+</head>
+<body>
+    <!-- <script src="./program1.js"></script> -->
+    <!-- <script src="./program2.js"></script> -->
+     <!-- <script src="./program3.js"></script> -->
+      <script src="./program4.js"></script>
+     <!-- <script src="./program5.js"></script>  -->
+</body>
+</html>
+
+1Q: PROGRAM TO CHECK WHETHER NUMBER DIVISIBLE BY 2 AND 3 AND BOTH
+
+PROGRAM:
+
+let number = prompt("Enter the number: ")
+if(number%2==0 && number%3==0){
+    console.log(number+" "+"divisible by both 2 and 3")
+}
+else if(number%2==0){
+    console.log("yes 2")
+}
+else if(number %3==0){
+    console.log("yes 3")
+}
+else{
+    console.log(number+" "+"not divisible by any number")
+}
+
+=============================================================================================================================================================================================
+
+2Q: PROGRAM TO FIND THE LARGEST NUM OF 3 NUMBERS EXPECTED USER
+
+PROGRAM:
+
+let a = prompt("Enter first number: ")
+let b= prompt("Enter second number: ")
+let c = prompt("enter third number: ")
+if(a>b && a>c){
+    console.log(a+" "+" a greatest among all three")
+
+}
+else if(b>a && b>c){
+    console.log(b+" "+" b greatest among all three")
+
+}
+else if(c>a && c>b){
+    console.log(c+" "+" c greater than all three")
+}
+else{
+    console.log("there is greatest number.")
+}
+
+=============================================================================================================================================================================================
+
+3Q: ACCEPT THE FOLLOWING FROM THE USER AND CALCULATE THE PERCENTAGE OF CLASSES ATTENDED:
+A.TOTAL NUMBER OF WORKING DAYS
+B.TOTAL NUMBER OF DAYS ABSENTS
+AFTER CALCULATING THE PERCENTAGE SHOW THAT, IF THE PERCENTAGE IS LESS THAN 75 THEN NOT ELIGIBLE FOR EXAM
+
+PROGRAM:
+
+var workingdays = (prompt("TOTAL WORKING DAYS: "))
+var absent= (prompt("TOTAL NUMBER OF DAYS ABSENTS: "))
+var presentdays = workingdays-absent
+// to get percentage of student we use (presentdays/workingdays * 100)
+var percentage = (presentdays/workingdays)*100
+if(percentage >=75){
+    console.log(percentage+" "+"eligible for exam")
+}
+else{
+    console.log(percentage+" "+"not eligible for exam")
+}
+
+=============================================================================================================================================================================================
+4Q: A COMPANY DECIDED TO GIVE BONUS TO EMPLOYEES ACCORDING TO THE FOLLOWING CRITERIA:
+A.TIME PERIOD OF SERVICE       BONUS
+  -----------------------------------
+  MORE THAN 10 YEARS            10%
+  >=6 AND <=10                  8%
+  LESS THAN 6 YEARS             5%
+ASK THE USER FOR THEIR SALARY AND YEARS OF SERVICE AND PRINT THE BONUS
+
+PROGRAM:
+
+let salary = parseInt(prompt("Enter the salary of an employee: "))
+let yearsofexp = parseInt(prompt("Enter the experience of the employee: "))
+if (yearsofexp>=10){
+    let bonus = salary*0.1
+    let totalsal = salary+bonus
+    console.log("total salary for an employee is a: "+totalsal)
+}
+else if(yearsofexp>=6 && yearsofexp<10){
+    let bonus = salary*0.8
+    let totalsal = salary+bonus
+    console.log("total salary for an employee is b : "+totalsal)
+
+}else{
+    let bonus = salary*0.5
+    let totalsal = salary+bonus
+    console.log("total salary for an employee is c: "+totalsal)
+}
