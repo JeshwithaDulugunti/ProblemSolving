@@ -1,0 +1,62 @@
+implemented in vscode
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statements</title>
+</head>
+<body>
+    <script src="./statement.js"></script>
+</body>
+</html>
+
+
+
+statement.js
+
+program1
+
+let number = prompt("enter the number:")
+switch(true){
+    case number>0:
+        console.log("number is positive")
+        break
+    case number==0:
+        console.log("number equal to 0")
+        break
+    case number<0:
+        console.log("number is a negative number")
+    default:
+        console.log("there is no number")
+
+}
+
+program2
+
+var day = prompt("Enter the required specific day: ")
+switch(day){
+    case 'monday':
+        console.log(day+" "+"is a weekday.")
+        break
+    case 'tuesday':
+        console.log(day+" "+"is a weekday.")
+    case 'wednesday':
+        console.log(day+" "+"is a weekday.")
+    case 'thursday':
+        console.log(day+" "+"is a weekday.");
+        break
+    case 'friday':
+        console.log(day+" "+"is a weekend.")
+    case 'saturday':
+        console.log(day+" "+"is a weekend.");
+        break
+    case 'sunday':
+        console.log(day+" "+"its a holiday.");
+        break
+    default:
+        console.log("invalid entry.")
+        break
+
+}
