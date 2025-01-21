@@ -1,0 +1,44 @@
+implementedd in vs code
+
+loops.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS</title>
+</head>
+<body>
+    <script src="./loops.js"></script>
+</body>
+</html>
+
+
+loops.js
+let start=1
+let end = 10
+while(start<=end){
+   console.log(start)
+   start=start+1
+}
+
+let s=2
+let n=8
+while(s<=n){
+   console.log(s+1)
+   s=s+2
+}
+
+
+do{
+   console.log("count: "+s)
+   s++
+}while(s>10);
+
+
+for(let i=2;i<=8;i=i+2){
+   if(i>4){
+      break;
+   }
+   console.log(i+1)
+}
