@@ -1,0 +1,45 @@
+Implemented in VSCODE...
+functions.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script src="./functions.js"></script>
+</body>
+</html>
+====================================================================================================================================================================================================================
+function.js
+function greet(){
+    console.log("HI cutie")
+}
+greet()
+console.log("hello")
+greet()
+
+
+function g(n){
+    console.log("hello"+n)
+}
+let n = prompt("enter your name: ")
+g(n)
+
+
+....ADDING TWO NUMBERS USING FUNCTION....//
+function add(a,b){
+    console.log(a+b)
+}
+add(5,7)
+
+
+....USING TWO ARGUMENTS INPUT FROM USER....//
+function add(a,b){
+    return a+b
+}
+let a= parseFloat(prompt("enter the first number: "))
+let b= parseFloat(prompt("enter the second number: "))
+let result= add(a,b)
+document.write("addition of "+a+"and "+b+"="+result)
