@@ -1,0 +1,72 @@
+implemented  arrow funtions in vscode..
+
+functions.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arrow Functions</title>
+</head>
+<body>
+    <script src="./functions.js"></script>
+</body>
+</html>
+
+functions.js
+let c=()=>{
+    console.log("hi mru")
+    }
+    c()
+
+let x = (x,y)=>{
+    console.log(x+y)
+    }
+    x(20,30)
+    x(30,40)
+    
+
+let greet=x=>console.log(x)
+greet('Hello')
+
+let greet = () =>console.log("Hello");
+ greet()
+
+
+
+let age=18
+let welcome=(age<18)?
+()=>console.log("Hi boys"):
+()=>console.log("Hi girls")
+welcome()
+
+function task1(){
+    console.log("Task1 : start")
+    }
+    function task2(){
+    console.log("Task2 : start")
+    }
+    function task3(){
+    console.log("Task3 : start")
+    }
+    task1()
+    task2()
+    task3()
+    
+
+console.log("hi anuuu")
+setTimeout(()=>{
+    console.log("bhavana is waiting for u")
+},5000);
+console.log("even im waiting")
+
+
+function greet(name,callback){
+    console.log("hell0" +" "+ name)
+    callback();
+    }
+    function sayGoodBye(){
+    console.log("goodbye")
+    }
+    greet("sam" ,sayGoodBye)
