@@ -1,0 +1,70 @@
+implemented in vs code
+
+
+function.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arrow Functions</title>
+</head>
+<body>
+    <script src="./functions.js"></script>
+</body>
+</html>
+
+
+
+
+functions.js
+
+function greet(name,callback){
+    console.log("hell0" +" "+ name)
+    callback();
+    }
+    function sayGoodBye(){
+    console.log("goodbye")
+    }
+    greet("sam" ,sayGoodBye) 
+
+
+
+function mainFunction(callback){
+console.log("Executing main function")
+callback()
+}
+function callbackFunction(){
+    console.log("callbackfunction executed")
+}
+mainFunction(callbackFunction)
+
+function greet(n,callback){
+    console.log("Hello" + " "+n);
+    callback();
+    }
+    function goodbye(){
+    console.log("is a good girl")}
+    greet("Bhavana" ,goodbye)
+
+function greet(name,callback){
+    console.log("hello"+" "+name)
+    callback();
+
+}
+greet("anuuu",function(){
+    console.log("a python developer");
+
+})
+
+function fetchData(callback){
+    console.log("Fetching data..")
+}
+setTimeout(function(){
+    console.log("data fetch")
+    callback()
+},2000);
+function processData(){
+    console.log("processing the fetch data..")
+}
+fetchData(processData)
