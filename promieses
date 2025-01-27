@@ -1,0 +1,56 @@
+implemented in vs code... 
+promieses..
+
+promises.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> promises</title>
+</head>
+<body>
+    <script src="./promises.js"></script>
+</body>
+</html>
+
+
+
+promises.js
+
+let myPromise = new Promise
+((resolve, reject)=>{
+    let success = true
+    if(success){
+    resolve("The operation is fulfilled")
+    }else{
+    reject("the operation failed")
+    }
+    })
+    myPromise
+    .then(result=>{
+    console.log(result)
+    })
+    .catch(error=>{
+    console.log(error)
+    })
+
+
+
+let promise = new Promise((resolve, reject)=>{
+    resolve(5);
+    })
+    
+    promise
+    .then(result=>{
+    console.log(result)
+    return result*2
+    })
+    .then(result=>
+    console.log(result)
+    return result+3
+    })
+    .then(result=>
+    console.log(result)
+    console.log(result)
+    })
