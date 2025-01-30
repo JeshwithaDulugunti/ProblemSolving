@@ -1,0 +1,21 @@
+ how to remove child elements from parent element:
+
+ 
+    removeChild()-to remove
+    example:
+    <h1> removing childnode</h1>
+    <h2>i am in hyd</h2>
+    <ul>
+    <li>anu</li>
+    <li>jesu</li>
+    <script>
+    const ul=document.querySelector('ul')
+    const lists=document.querySelectorAll('li')
+    console.log(ul)
+    console.log(lists)
+    for(const list of lists){
+    console.log(`removing:${list.nextContent}`)
+    ul.reomoveChild(list)
+    console.log(list)
+    console.log(lists)
+    }
