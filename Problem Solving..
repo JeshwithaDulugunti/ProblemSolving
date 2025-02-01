@@ -1,0 +1,37 @@
+Problem 1:  THE SYSTEM YOU ARE TASKED WITH BUILDING A SUSTEM TO CHECK WHETHER A PERSON IS ELIGIBLE TO VOTE. THE SYSTEM FOLLOWS THESE RULES:
+1.. A PERSON MUST BE AT LEAST 18 YEARS OLD TO VOTE.
+2.. IF THE PERSON IS A CITIZENS, THEY ARE ELIGIBLE TO VOTE
+3.. IF THE PERSON IS NOT A CITIZEN BUT HAS PASSED citizenship test they are eligible to vote
+4.. if the person is under 18 they cannot vote?
+
+
+answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let age = parseInt(prompt("Enter your age:"))
+        
+        if(age>=18 ){
+            let citizen = confirm("Are you a citizen?")
+        let passedCitizenTest = confirm("Have you passed citizen test?")
+            document.write("You are eligible to vote")
+            
+            if(age>=18 && !citizen && passedCitizenTest){
+                document.write("You are eligible to vote")
+            }
+            
+        }else{
+            document.write("You are not eligible to vote")
+        }
+    </script>
+</body>
+</html>
+
+
