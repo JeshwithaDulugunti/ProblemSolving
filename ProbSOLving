@@ -1,0 +1,69 @@
+06/02/25
+--create React App
+#empty folder
+#npx -node package executor
+Npx create -react-my-app
+Cd my-app
+Npm start
+
+
+Project folder
+Public / index.html:the main html file that server as the entry point for the app.
+Scr/index.js:the javascript entry point for the react app where the DOM is rendered
+Scr/App.js:the main component that server as the root of the component tree.
+1)components:(core build blocks of the react application).
+--the help to create reusable block of code
+#component
+#amazon
+Example:
+App.js:
+import React from "react";
+import './App.css'
+const Welcome = () => <h1 className='message'>Hello Nithin</h1>
+function App() {
+  return (
+    <div className="App">
+      <Welcome/>
+    </div>
+    )
+    }
+    export default App;
+app.css:
+.message{
+  color: blue;
+  background-color: aquamarine;
+  font-size: 40px;
+  text-align: center;
+  width: 30%;
+  margin-left: 80px;
+}
+Output:
+Hello Nithin
+
+Example2:
+App.js:
+import React from "react";
+import Welcome from './Welcome';
+const App = () => {
+  return (
+    <div style={{textAlign:"center",color:'red'}}>
+      <Welcome name="Nithin" greeting ="Hello" />
+      <Welcome name="Jeshu" greeting ="Hello"/>
+    </div>
+    )
+    }
+    export default App;
+welcome.js:
+import React from "react";
+const Welcome = (props) =>{
+    const{name,greeting}=props
+    return(
+        <h1 className="message">
+            {greeting} {name}
+        </h1>
+    )
+} 
+export default Welcome;
+Output:
+Hello Nithin
+Hello Jeshu
