@@ -1,0 +1,55 @@
+APP.JS FOR GREET
+
+import React from 'react';
+import Fruitlist from './Fruitlist';
+
+function App(){
+  const isLoggedIn=false;
+  return(
+    <div className='App'>
+      <Greet isLoggedIn={isLoggedIn}/>
+    </div>
+  )
+}
+export default App;
+
+
+GREET.JS
+import React from 'react';
+function Greet({isLoggedIn}) {
+    if(isLoggedIn){
+        return <h1>Welcome Back!</h1>
+    }else{
+        return <h1>Please Login</h1>
+    }
+}
+export default Greet;
+
+APP.JS FOR FRUITLIST:
+
+import React from 'react';
+import Fruitlist from './Fruitlist';
+
+function App(){
+  
+  return(
+    <div className='App'>
+      <Fruitlist/>
+    </div>
+  )
+}
+export default App;
+
+FRUITLIST.JS
+import React from 'react';
+import Fruitlist from './Fruitlist';
+
+function App(){
+  
+  return(
+    <div className='App'>
+      <Fruitlist/>
+    </div>
+  )
+}
+export default App;
