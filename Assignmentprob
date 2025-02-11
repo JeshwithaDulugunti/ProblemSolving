@@ -1,0 +1,95 @@
+TASK IS TO CREATE THE PROFILECARD..
+
+
+import React from "react";
+
+const ProfileCard = ({ name, greeting, image }) => {
+  return (
+    <div className="bg-white p-4 rounded-2xl shadow-md w-64 text-center">
+      <img
+        src={image}
+        alt={name}
+        className="w-20 h-20 rounded-full mx-auto mb-2 object-cover"
+      />
+      <h2 className="text-xl font-semibold">{name}</h2>
+      <p className="text-gray-600">{greeting}</p>
+    </div>
+  );
+};
+
+const App = () => {
+  const profiles = [
+    {
+      name: "John Doe",
+      greeting: "Hello, world!",
+      image: "c:\Users\vinny\AppData\Local\Temp\photography-7527978_1280.jpg",
+    },
+    {
+      name: "Jane Smith",
+      greeting: "Nice to meet you!",
+      image: "c:\Users\vinny\AppData\Local\Temp\portrait-3098319_1280.jpg",
+    },
+    {
+      name: "Alex Johnson",
+      greeting: "Good vibes only!",
+      image: "c:\Users\vinny\AppData\Local\Temp\woman-2178816_1280.jpg",
+    },
+  ];
+
+  return (
+    <div className="flex gap-4 p-4 bg-gray-100 min-h-screen justify-center">
+      {profiles.map((profile, index) => (
+        <ProfileCard
+          key={index}
+          name={profile.name}
+          greeting={profile.greeting}
+          image={profile.image}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default App;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: beige;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-card {
+  background-color: black;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 16rem;
+  text-align: center;
+}
+
+.profile-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 9999px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.container {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
