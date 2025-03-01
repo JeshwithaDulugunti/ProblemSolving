@@ -1,0 +1,70 @@
+Spring boot
+It uses MVC acrchietecture
+MVC(model View Controller)
+model-database
+view-frontend
+controller-bridge between model and view
+
+anotations
+change the functionalites of core java
+
+sts4-spring tool suite 4
+mysql,reactjs
+
+S3:
+s3-storage devices -images....
+it gives path name for mysql
+-------------------------------------------------------------------------------------------------------------------------
+Database:
+
+create database ecomm_db;
+use ecomm_db;
+show tables;
+
+create table laptops(id int primary key,pname varchar(50),pcost double,pimage varchar(200),qty int);
+
+insert into laptops values(1,'hp',10,'',100);
+----------------------------------------------------------------------------------------------------------------
+Entity:
+we need entity class:
+new->.entity
+entity class
+new->class
+
+@Entity
+public class Laptops{
+@id
+private int id; 
+private String pname; //to use private variable in different packages we need to create getters and setters
+                      //right click-source-generate getters and setters-we can select
+private double pcost;
+private String pimage;
+private it qty;
+}
+
+Constructors:
+to connent diferent packages
+right click -source-generate constructors
+---------------------------------------------------------------------------------------------------------------
+repository:
+right click -new-repo
+right -new-inerface-name-extended interface( by clicking on add and provide names)
+if error click on connect entity.backend
+
+--------------------------------------------------------------------------------------------------------------
+service:
+package new-name(servicepackage)
+new-class-name(laptopsevice)-->provide @Service annotation
+we need to use repository @Repository
+
+
+load repo to service: @Autowired (one class to another core java class)
+
+
+entity-takes the data from mysql
+through repository it fetches data and gives to service
+-------------------------------------------------------------------------------------------------------------------- 
+
+Spring boot:
+src/main/resources-->application.propertites
+
